@@ -1,0 +1,21 @@
+Generic single-database configuration.
+
+In this project, it will have a database for a particular showroom for cars. It will be named:
+
+showroom.db
+
+Our showroom.db will have three tables:
+
+    showrooms - will display name of showrrom and its location
+
+    carowners - will display first name and last name of the car owner
+
+    cars - will display car details of the car
+
+The relationships will be:
+
+    Showroom has one-to-many relationship with cars table
+    Showroom has one-to-many relationship with carowners table
+    Carowner has one-to-many relationship with cars table
+    Car has many-to-one relationship with showroom
+    Car has many-to-one relationship with car owner
